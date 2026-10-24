@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Herbie | Information Technology Student Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header>
+  <div class="container bar">
+    <a class="logo" href="#home" aria-label="Herbie, home">Herbie</a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="home" aria-labelledby="hero-title">
+    <div class="container grid">
+      <div class="hero-copy">
+        <h1 id="hero-title">Hello, I&rsquo;m <span>Herbie</span></h1>
+        <p>Information Technology student building web things that are clear to use.</p>
+        <div class="actions">
+          <a class="btn" href="#projects">View my projects</a>
+          <a class="btn ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <div class="photo"><img src="images/herbie.jpg" alt="Herbie smiling at the camera"><span class="badge">BSIT</span>
+    </div>
+  </section>
+
+  <section class="section" id="about" aria-labelledby="about-title">
+    <div class="container">
+      <h2 id="about-title">About me</h2>
+      <p class="lede">Who I am and what I&rsquo;m working toward.</p>
+      <div class="grid">
+        <div class="about-copy">
+          <p>I&rsquo;m a BS Information Technology student who likes turning an idea into something people can actually use. I plan first: who the page is for, what they need, and where it belongs on the screen. Then I build it.</p>
+          <p>Right now I&rsquo;m learning HTML, CSS, and JavaScript, and practicing design in Figma. I&rsquo;m looking for internships where I can grow as a frontend developer.</p>
+        </div>
+        <dl class="facts">
+          <div><dt>Name</dt><dd>Herbie Hugh S. Conlu</dd></div>
+          <div><dt>Program</dt><dd>BS Information Technology</dd></div>
+          <div><dt>Interests</dt><dd>Networking, cybersecurity, web development, cloud and systems administration</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="section band" id="skills" aria-labelledby="skills-title">
+    <div class="container">
+      <h2 id="skills-title">Skills</h2>
+      <p class="lede">What I can build with today.</p>
+      <div class="grid">
+        <div class="skill-group">
+          <h3>Frontend</h3>
+          <ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Responsive layout</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Data and backend</h3>
+          <ul class="chips"><li>Data analysis</li><li>Database design</li><li>Python</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Design and tools</h3>
+          <ul class="chips"><li>Figma</li><li>Wireframing</li><li>Prototyping</li><li>Git</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects" aria-labelledby="projects-title">
+    <div class="container">
+      <h2 id="projects-title">Projects</h2>
+      <p class="lede">Three things I&rsquo;ve built. Swap in your own.</p>
+      <div class="grid">
+        <article class="card">
+          <div class="thumb t1"><image src="images/html logo.png" alt="screenshot of the HTML/CSS/javascript">Screenshot</div>
+          <h3>HTML/CSS/Javascript</h3>
+          <p style="flex:none;font-size:var(--t-cap)"></p>
+          <a class="link" href="#contact">View details</a>
+        </article>
+        <article class="card">
+          <div class="thumb t2"><image src="images/css logo.png" alt="screenshot of the Web HTML/CSS/ Portfolio">Screenshot</div>
+          <h3>Web HTML/CSS Portfolio</h3>
+          <p style="flex:none;font-size:var(--t-cap)"></p>
+          <a class="link" href="#contact">View details</a>
+        </article>
+        <article class="card">
+          <div class="thumb t3"><image src="images/c++ logo.png" alt="C++ Practices">Screenshot</div>
+          <h3>C++ Practices</h3>
+          <p style="flex:none;font-size:var(--t-cap)"></p>
+          <a class="link" href="#contact">View details</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="contact" aria-labelledby="contact-title">
+    <div class="container grid">
+      <div class="contact-copy">
+        <h2 id="contact-title">Let&rsquo;s talk</h2>
+        <p>Send me a message about an internship, a project, or a question. I reply within a few days.</p>
+        <ul class="links">
+          <li><a href="mailto:herbiehugh565@gmail.com">herbiehugh565@gmail.com</a></li>
+          <li><a href="https://github.com/" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+      <form id="contact-form" novalidate>
+        <label for="email">Your email
+          <input id="email" name="email" type="email" autocomplete="email" required placeholder="your-email@gmail.com">
+        </label>
+        <label for="msg">Message
+          <textarea id="msg" name="msg" required></textarea>
+        </label>
+        <button class="btn" type="submit">Send message</button>
+        <p class="status" id="status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <span>&copy; 2026 Herbie. Built from a Figma plan.</span>
+    <span><a href="mailto:herbiehugh565@gmail.com">Email</a><a href="https://github.com/" rel="noopener">GitHub</a><a></a>rel="noopener">LinkedIn</a></span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
